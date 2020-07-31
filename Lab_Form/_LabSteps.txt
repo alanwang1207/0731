@@ -264,9 +264,12 @@ type = button 裝飾用的按鈕 做跳轉畫面用
     <Note> 
     請問，點按「登入」按鈕時，http://server2020.epizy.com/echo.php 收到的資料欄位名稱，
     是 loginButton 還是 loginOrCancel?
+    一律是傳name當key
+    對應的就是value
     
     <Note> 
     表單的 method 屬性值如果改成 get，有何差別?
+header的差別
 
 
 5.7 針對 id="userNameTextBox" 的文字輸入方塊，加入下列屬性:
@@ -280,6 +283,8 @@ type = button 裝飾用的按鈕 做跳轉畫面用
 5.9 針對 id="rememberMeCheckBox" 的核取方塊，加入兩個屬性:
     name="rememberMe" value="yes"
 
+    以上三點都是需要有key才能傳送值 連連看的概念
+
 
 5.A 在瀏覽器檢視網頁作品。輸入帳號、密碼後，點按「登入」按鈕，
     檢視 http://server2020.epizy.com/echo.php 報告的資料。
@@ -287,10 +292,13 @@ type = button 裝飾用的按鈕 做跳轉畫面用
     <Note> 
     點按「登入」按鈕時，http://server2020.epizy.com/echo.php 收到的資料欄位名稱，
     是 id 還是 name ?
+    name
 
     <Note> 
     如果沒有勾選「記住我」，
     http://server2020.epizy.com/echo.php 有收到核取方塊的資料嗎?
+    沒勾選一律不傳資料
+    而不是顯示no off之類的
 
 
 
