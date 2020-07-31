@@ -17,6 +17,14 @@ Lab -- Bootstrap 之表單版型
                     id="userNameTextBox" 
                     placeholder="輸入帳號或E-mail" />
     </form>
+在HTML網頁可使用選單元素<label>來表示輸入欄位的標題。
+type是輸入類型
+id像是身分證
+type = hidden 可以隱藏輸入內容
+<input type="hidden" name="隱藏欄位名稱" value="隱藏欄位值">
+placeholder可以顯示未輸入時的文字
+for 是來針對某個欄位
+class使bootstrap介入
 
 
 2.2	在瀏覽器檢視作品
@@ -24,9 +32,10 @@ Lab -- Bootstrap 之表單版型
 
 2.3	用一個 <div> 包住 label 與 input，
     <div> 設定 class="form-group" 屬性:
-
+分類用
 
 2.4	針對 <input>，加入 class="form-control" 屬性
+可使label往上飄
 	<Note> 2.3 + 2.4 完成後的表單:
 
     <form>
@@ -42,10 +51,12 @@ Lab -- Bootstrap 之表單版型
     </form>
 
 
+
+
 2.5	在瀏覽器檢視作品。
 
 	<Note> 標籤與文字輸入方塊的樣式效果有何變化?
-
+可使label往上飄
 
 2.6	仿上述格式，在表單繼續加入密碼欄位:
 
@@ -58,10 +69,18 @@ Lab -- Bootstrap 之表單版型
                 id="userNameTextBox" 
                 placeholder="請在此輸入密碼" />
         </div>
+type = password 可隱藏輸入內容
+type = radio 圓鈕
+type = submit 按鈕
+type = checkbox 勾選匡
+
+
 
 
 2.7	再加入核取方塊
 	<Note> 請留意這次的 label 與 input 對應方式，與前兩個文字輸入方塊的作法不同。
+    上面的做法是label和input做連連看
+    label 包住input
 
     <div class="form-group form-check">
         <label class="form-check-label">
@@ -81,7 +100,7 @@ Lab -- Bootstrap 之表單版型
             class="btn btn-outline-secondary">
             <i class="fa fa-remove"></i> 取消
     </button>        
-
+這裡的class是為了使bootstrap渲染用
 
 
 
@@ -90,7 +109,7 @@ Lab -- Bootstrap 之表單版型
 
 3.1	找到表單的開始標籤，加入 class="form-inline" 屬性，像這樣:
 	<form class="form-inline">
-
+效果是水平排列 使帳密輸入匡對其label
 
 3.2	在瀏覽器檢視作品。
 
@@ -277,3 +296,14 @@ Lab -- Bootstrap 之表單版型
 推薦一個 Bootstrap 的表單產生器:
 https://bootstrapformbuilder.com/
 
+
+<form>
+<select name="YourLocation">
+　<option value="Taipei">台北</option>
+　<option value="Taoyuan">桃園</option>
+　<option value="Hsinchu">新竹</option>
+　<option value="Miaoli">苗栗</option>
+　...
+</select>
+</form>
+form表單使用方式 外面用form 裡面用option
