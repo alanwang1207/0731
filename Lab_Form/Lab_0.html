@@ -14,44 +14,60 @@
 
 <div class="container">
     <!-- HTML 內容放這邊 -->
-    <form class="form-inline">
-        <div class="form-group">
-            <label for="userNameTextBox">
+    <form method="post" action="http://server2020.epizy.com/echo.php">
+        <!-- username -->
+        <div class="form-group row">
+            <label class="col-form-label col-2 text-right" 
+                for="userNameTextBox">
                 <i class="fa fa-user"></i> 帳號:
             </label>
             <input type="text" 
-                class="form-control"
+                class="col-10 form-control"
                 id="userNameTextBox" 
+                name="userName"
                 placeholder="輸入帳號或E-mail" />
         </div>
-    
-    <div class="form-group">
-        <label for="userNameTextBox">
+    <!-- password -->
+        <div class="form-group row">
+        <label class="col-form-label col-2 text-right"
+            for="userNameTextBox">
             <i class="fa fa-lock"></i> 密碼:
         </label>
         <input type="password" 
-            class="form-control"
+            class="col-10 form-control"
             id="userNameTextBox" 
+            name="password"
             placeholder="請在此輸入密碼" />
-    </div>
-    </form >
-    <div class="form-group form-check">
-        <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> 記住我(下次自動登入)
-        </label>
-    </div>
-    <button type="button" 
+        </div>
+<!-- remember me -->
+        <div class="form-group row">
+            <div class="col-sm-2">&nbsp;</div>
+            <div class="form-check col-10">
+                <label class="form-check-label">
+                    <input name="rememberMe" value="yes" class="form-check-input" type="checkbox"> 記住我(下次自動登入)
+                </label>
+            </div> 
+        </div>
+    
+    <!-- 登入取消 -->
+    <div class="form-group row">
+        <div class="col-sm-2">&nbsp;</div>
+        <div class="col-sm-10 pl-0">
+            <button type="submit" 
             id="loginButton" 
+            name="loginOrCancel" value="login"
             class="btn btn-outline-success">
             <i class="fa fa-check"></i> 登入
     </button>
-    <button type="button" 
+    <button type="submit" 
             id="cancelButton" 
+            name="loginOrCancel" value="cancel"
             class="btn btn-outline-secondary">
             <i class="fa fa-remove"></i> 取消
-    </button>        
-
-</div>
+    </button> 
+        </div>
+    </div>
+</form >
 
 </body>
 </html>

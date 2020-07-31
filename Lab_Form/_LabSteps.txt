@@ -71,8 +71,9 @@ class使bootstrap介入
         </div>
 type = password 可隱藏輸入內容
 type = radio 圓鈕
-type = submit 按鈕
+type = submit 按鈕 只有submit才有送出的動作
 type = checkbox 勾選匡
+type = button 裝飾用的按鈕 做跳轉畫面用
 
 
 
@@ -101,6 +102,7 @@ type = checkbox 勾選匡
             <i class="fa fa-remove"></i> 取消
     </button>        
 這裡的class是為了使bootstrap渲染用
+這裡的i是為了渲染子元素 例如增加溝溝圖示
 
 
 
@@ -131,7 +133,7 @@ type = checkbox 勾選匡
 
 4.2	針對「帳號」的那個 Label，加上下列屬性
     class="col-form-label col-2 text-right"
-
+向右靠
 
 4.3	id="userNameTextBox" 的文字輸入方塊，class 屬性改成:
     class="col-10 form-control"
